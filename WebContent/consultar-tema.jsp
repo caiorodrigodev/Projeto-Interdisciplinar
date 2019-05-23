@@ -3,7 +3,7 @@
 <%@page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
 <%@include file='include/template/organisms/top.jsp'%>
-<%String titulo = "Temas cadastrados";%>
+<%String titulo = "Consultar temas";%>
  
     <title><%=titulo%></title>
     
@@ -14,7 +14,7 @@ if(id == null) {
 
     <div class="container col-lg-2 my-5">
       <form action="ConsultarTema.do" method="post">
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu·rio</label>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu√°rio</label>
           <div class="input-group mb-2 mr-sm-2">
             <input type="text" class="form-control" name="inputIDTema" placeholder="ID do Tema">
               <div class="input-group-prepend">
@@ -30,7 +30,7 @@ if(id == null) {
 
     <div class="container col-lg-2 my-5">
       <form action="ConsultarTema.do" method="post">
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu·rio</label>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu√°rio</label>
           <div class="input-group mb-2 mr-sm-2">
             <input type="text" class="form-control" name="inputIDTema" placeholder="ID do Tema">
               <div class="input-group-prepend">
@@ -58,8 +58,8 @@ try {
         <tr>
             <th width="65px">ID</th>
             <th width="500px">Data cadastro</th>
-            <th width="600px">TÌtulo</th>
-            <th colspan="2">AÁ„o</th>
+            <th width="600px">T√≠tulo</th>
+            <th colspan="2">A√ß√£o</th>
         </tr>		
         <tr>
             <td><%=tema.getIdTema()%></td>
@@ -69,7 +69,7 @@ try {
             <td rowspan="3" align="center" class="text-primary" style="vertical-align: middle"> <a href="/Projeto_Interdisciplinar/editar-tema.jsp?id=<%=tema.getIdTema()%>"><i class="fal fa-edit"></i></a></td>
         </tr>
         <tr>
-            <th colspan="2">IntroduÁ„o</th>
+            <th colspan="2">Introdu√ß√£o</th>
             <th>Requisitos</th>
         </tr>		
         <tr>
