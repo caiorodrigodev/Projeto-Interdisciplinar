@@ -6,7 +6,7 @@
     
 <%@include file='include/template/organisms/top.jsp'%>
 
-<%String titulo = "Temas cadastrados";%>
+<%String titulo = "Consultar turmas";%>
  
     <title><%=titulo%></title>
     
@@ -17,7 +17,7 @@ if(id == null) {
 
     <div class="container col-lg-2 my-5">
       <form action="ConsultarTurma.do" method="post">
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu·rio</label>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu√°rio</label>
           <div class="input-group mb-2 mr-sm-2">
             <input type="text" class="form-control" name="inputIDTurma" placeholder="ID da Turma">
               <div class="input-group-prepend">
@@ -33,7 +33,7 @@ if(id == null) {
 
     <div class="container col-lg-2 my-5">
       <form action="ConsultarTurma.do" method="post">
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu·rio</label>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Usu√°rio</label>
           <div class="input-group mb-2 mr-sm-2">
             <input type="text" class="form-control" name="inputIDTurma" placeholder="ID da Turma">
               <div class="input-group-prepend">
@@ -66,7 +66,7 @@ try {
 							<th scope="col">Ano</th>
 							<th scope="col">Tema</th>
 							<th scope="col">Qtd de Alunos</th>
-            				<th colspan="2">AÁ„o</th>
+            				<th colspan="2">A√ß√£o</th>
 						</tr>
 					</thead>
 					<tbody align="center">	
